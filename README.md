@@ -1,7 +1,7 @@
 ## KotlinAndroidSample
 ### 1. NetWork with [Kotlin] + [OkHttp] + [RxJava] / [RxAndroid]
 Request url("https://github.com/wangjiegulu") and update UI:
-```
+```kotlin
 "https://github.com/wangjiegulu".request().get().rxExecute()
                     .map({ r -> r.body().string() })
                     .observeOnMain()
@@ -10,7 +10,7 @@ Request url("https://github.com/wangjiegulu") and update UI:
 
 ### 2. Inject views & events with [AndroidInject] library
 Inject "tv"(TextView) view and inject click event of the button.
-```
+```kotlin
 @AILayout(R.layout.activity_inject)
 public class InjectWithAIActivity : BaseActivity(){
     @AIView(R.id.activity_inject_tv)
