@@ -41,6 +41,13 @@
                     android:text="Inject with Kotlin Annotation"
                     />
 
+            <Button
+                    android:id="@+id/activity_main_database_rapid_orm_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Database Rapid ORM"
+                    />
+
 
         </LinearLayout>
     </ScrollView>

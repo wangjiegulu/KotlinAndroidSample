@@ -8,6 +8,7 @@ import android.view.View
 import android.widget.Button
 import com.wangjie.kotlinexample.R
 import com.wangjie.kotlinexample.ui.base.BaseActivity
+import com.wangjie.kotlinexample.ui.database.DatabaseActivity
 import com.wangjie.kotlinexample.ui.inject.InjectWithAIActivity
 import com.wangjie.kotlinexample.ui.inject.InjectWithKotlinActivity
 import com.wangjie.kotlinexample.ui.network.NetWorkActivity
@@ -22,6 +23,8 @@ public class MainActivity : BaseActivity() {
         find<Button>(R.id.activity_main_network_btn).setOnClickListener(onClickListener)
         find<Button>(R.id.activity_main_inject_with_ai_btn).setOnClickListener(onClickListener)
         find<Button>(R.id.activity_main_inject_with_kotlin_btn).setOnClickListener(onClickListener)
+        find<Button>(R.id.activity_main_database_rapid_orm_btn).setOnClickListener(onClickListener)
+
 
     }
 
@@ -30,6 +33,7 @@ public class MainActivity : BaseActivity() {
             R.id.activity_main_network_btn -> startActivity(Intent(this@MainActivity, javaClass<NetWorkActivity>()))
             R.id.activity_main_inject_with_ai_btn -> startActivity(Intent(this@MainActivity, javaClass<InjectWithAIActivity>()))
             R.id.activity_main_inject_with_kotlin_btn -> startActivity(Intent(this@MainActivity, javaClass<InjectWithKotlinActivity>()))
+            R.id.activity_main_database_rapid_orm_btn -> startActivity(Intent(this@MainActivity, javaClass<DatabaseActivity>()))
         }
     }
 
