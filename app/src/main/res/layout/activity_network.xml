@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <Button
+            android:id="@+id/activity_network_request_btn"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="request url"
+            />
+
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent"
+                android:fillViewport="true"
+            >
+        <TextView
+                android:id="@+id/activity_network_request_result_tv"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:hint="Please click 'request url' button and request url"
+                />
+    </ScrollView>
+
+</LinearLayout>

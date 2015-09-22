@@ -1,3 +1,14 @@
+.gradle
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries
+.DS_Store
+/build
+settings.gradle
+gradle.properties
+/*/*.iml
+
+
 # Built application files
 *.apk
 *.ap_
@@ -25,3 +36,5 @@ proguard/
 
 # Log Files
 *.log
+.idea/
+*.iml
