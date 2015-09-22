@@ -23,6 +23,9 @@
 
 
         <activity android:name=".ui.network.NetWorkActivity"/>
+        <activity android:name=".ui.inject.InjectWithAIActivity"/>
+        <activity android:name=".ui.inject.InjectWithKotlinActivity"/>
+
 
     </application>
 
